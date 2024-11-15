@@ -1,6 +1,7 @@
 import 'package:aiwork/intro_screens/intro_page1.dart';
 import 'package:aiwork/intro_screens/intro_page2.dart';
 import 'package:aiwork/intro_screens/intro_page3.dart';
+import 'package:aiwork/login_anim.dart';
 import 'package:aiwork/login_screen.dart';
 //import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) {
-                              return LoginScreen();
+                              return LoginAnim();
                             },
                           ),
                         );

@@ -1,8 +1,15 @@
 //eimport 'package:aiwork/login_screen.dart';
 import 'package:aiwork/onboarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  //supabase setup
+  await Supabase.initialize(
+    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdvbW16ZGdub2d1dnJyamhzb2htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE2NzM2MzEsImV4cCI6MjA0NzI0OTYzMX0.lTVeBrItR_BIowzq56029J2TPGvlbP5nbTD2rYsBcDg",
+    url: "https://gommzdgnoguvrrjhsohm.supabase.co",
+    
+    );
   runApp(const MyApp());
 }
 
