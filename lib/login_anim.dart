@@ -8,7 +8,7 @@ class LoginAnim extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: FlutterLogin(onLogin: onLogin, onRecoverPassword: onRecoverPassword),
+      body: 
     );
   }
 }
